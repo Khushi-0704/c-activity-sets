@@ -1,0 +1,69 @@
+PS C:\psc\c-activity-sets\set01> gdb .\problem02.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\psc\c-activity-sets\set01\problem02.exe...done.
+(gdb) r
+Starting program: C:\psc\c-activity-sets\set01/.\problem02.exe
+[New Thread 18184.0x4c7c]
+[New Thread 18184.0x4494]
+enter first number:4
+enter second number:6
+The sum of 4 + 6 is 10[Inferior 1 (process 18184) exited normally]
+(gdb) b 6
+Breakpoint 1 at 0x40146e: file .\problem02.c, line 6.
+(gdb) b 7
+Breakpoint 2 at 0x40147a: file .\problem02.c, line 7.
+(gdb) b 9
+Breakpoint 3 at 0x40148e: file .\problem02.c, line 9.
+(gdb) b 10
+Breakpoint 4 at 0x40149a: file .\problem02.c, line 10.
+(gdb) b 12
+Breakpoint 5 at 0x4014ae: file .\problem02.c, line 12.
+(gdb) r
+Starting program: C:\psc\c-activity-sets\set01/.\problem02.exe
+[New Thread 13336.0x3ef0]
+[New Thread 13336.0x56d8]
+
+Breakpoint 1, main () at .\problem02.c:6
+6           printf("enter first number:");
+(gdb) n
+enter first number:
+Breakpoint 2, main () at .\problem02.c:7
+7           scanf("%d" , &a);
+(gdb) n
+6
+
+Breakpoint 3, main () at .\problem02.c:9
+9           printf("enter second number:");
+(gdb) n
+enter second number:
+Breakpoint 4, main () at .\problem02.c:10
+10          scanf("%d" , &b);
+(gdb) n
+8
+
+Breakpoint 5, main () at .\problem02.c:12
+12          sum=a+b;
+(gdb) p a
+$1 = 6
+(gdb) p b
+$2 = 8
+(gdb) n
+14          printf("The sum of %d + %d is %d" , a,b,sum);
+(gdb) p sum
+$3 = 14
+(gdb) n
+The sum of 6 + 8 is 1415            return 0;
+(gdb) quit
+A debugging session is active.
+
+        Inferior 1 [process 13336] will be killed.
+
+Quit anyway? (y or n) y
