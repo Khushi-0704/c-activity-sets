@@ -5,7 +5,7 @@ void output(int a, int b, int c, int largest);
 
 int main(){
 
-     int a,b,c,largest_num;
+     int a,b,c,largest;
     input(&a);
     input(&b);
     input(&c);
@@ -13,3 +13,11 @@ int main(){
     output(a,b,c,largest);
     return 0;
 }
+ int input (){
+
+    
+ }
+
+
+
+
