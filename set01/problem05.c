@@ -11,7 +11,7 @@ int main()
     a=input();
     b=input();
     c=input();
-    largestnum=comapare(a,b,c);
+    largestnum=compare(a,b,c);
     output(a,b,c,largestnum);
     return 0;
 }
