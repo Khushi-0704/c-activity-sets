@@ -6,9 +6,9 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
 and "show warranty" for details.
 This GDB was configured as "mingw32".
-For bug reporting instructions, please see:
+For bug reporting instructions, please see: 
 <http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from C:\psc\c-activity-sets\set01\problem02.exe...done.
+Reading symbols from C:\psc\c-activity-se       ts\set01\problem02.exe...done.
 (gdb) r
 Starting program: C:\psc\c-activity-sets\set01/.\problem02.exe
 [New Thread 18184.0x4c7c]

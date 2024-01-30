@@ -13,10 +13,24 @@ int main(){
     output(a,b,c,largest);
     return 0;
 }
- int input (){
+ int input (int *a , int*b , int*c){
 
     
+    int n ;
+    printf("enter a number:");
+    scanf("%d" ,n);
+
  }
+ 
+ void compare(int a,int b,int c , int*largest){
+    if(a>=b && a>=c);
+    return a;
+    else if(b>=a && b>=c)
+    return b;
+    else
+    return c;
+ }
+
 
 
 
