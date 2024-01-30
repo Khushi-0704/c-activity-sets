@@ -31,6 +31,7 @@ int add(int a, int b){
 void output(int a, int b, int sum){
 
     printf("the sum of %d + %d is %d" , a , b ,sum);
+    return 0;
 }
 
 

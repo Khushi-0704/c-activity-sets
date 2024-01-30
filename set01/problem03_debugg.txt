@@ -1,0 +1,91 @@
+ gdb .\problem03.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\psc\c-activity-sets\set01\problem03.exe...done.
+(gdb) r
+Starting program: C:\psc\c-activity-sets\set01/.\problem03.exe
+[New Thread 6716.0x1858]
+[New Thread 6716.0xd10]
+enter two numbers:5 8 
+enter two numbers:the sum of 5 + 8 is 13[Inferior 1 (process 6716) exited normally]
+(gdb) b 18
+Breakpoint 1 at 0x4014c1: file problem03.c, line 18.
+(gdb) b 19
+Breakpoint 2 at 0x4014cd: file problem03.c, line 19.
+(gdb) b 27
+Breakpoint 3 at 0x4014eb: file problem03.c, line 27.
+(gdb) b 33
+Breakpoint 4 at 0x401501: file problem03.c, line 33.
+(gdb) r
+Starting program: C:\psc\c-activity-sets\set01/.\problem03.exe
+[New Thread 13112.0x3e9c]
+[New Thread 13112.0x133c]
+
+Breakpoint 1, input () at problem03.c:18
+warning: Source file is more recent than executable.
+18          printf("enter two numbers:");
+(gdb) n
+enter two numbers:
+Breakpoint 2, input () at problem03.c:19
+19          scanf("%d" , &n);
+(gdb) n
+5 8
+20          return n;
+(gdb) n
+23      }
+(gdb) n
+main () at problem03.c:10
+10          b=input();
+(gdb) n
+
+Breakpoint 1, input () at problem03.c:18
+18          printf("enter two numbers:");
+(gdb) n
+enter two numbers:
+Breakpoint 2, input () at problem03.c:19
+19          scanf("%d" , &n);
+(gdb) n
+20          return n;
+(gdb) n
+23      
+(gdb) n
+main () at problem03.c:11
+11          sum=add(a,b);
+(gdb) n
+
+Breakpoint 3, add (a=5, b=8) at problem03.c:27
+27          sum=a+b;
+(gdb) p a
+$1 = 5
+(gdb) p b
+$2 = 8
+(gdb) n 
+28          return sum;
+(gdb) p sum 
+$3 = 13
+(gdb) n 
+29      }
+(gdb) n
+main () at problem03.c:12
+12          output(a,b,sum);
+(gdb) n
+
+Breakpoint 4, output (a=5, b=8, sum=13) at problem03.c:33
+33          printf("the sum of %d + %d is %d" , a , b ,sum);
+(gdb) p sum 
+$4 = 13
+(gdb) n
+the sum of 5 + 8 is 1334            return 0;
+(gdb) quit 
+A debugging session is active.
+
+        Inferior 1 [process 13112] will be killed.
+
+Quit anyway? (y or n)
