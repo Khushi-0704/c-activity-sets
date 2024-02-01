@@ -52,7 +52,7 @@ void output(int n , int a[n] , int sum)
         printf("%d" , a[i]);
         if(i<n-1) 
         {
-          printf("+");~
+          printf("+");
         }
 
     }
