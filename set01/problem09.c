@@ -8,7 +8,7 @@ int main(){
     float n , sqrroot;
     n=input();
     sqrroot = square_root(n);
-    outpur(n,sqrroot);
+    output(n,sqrroot);
     return 0;
 }
 
