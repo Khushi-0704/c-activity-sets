@@ -25,35 +25,35 @@ int main()
     int stringcompare(char *string1 , char *string2)
     {
         int i=0;
-        for(i=0 ; string1[i]==string2[i] && string1[i]!='\0 ' && string2[i]!='\0' ; i ++)
+        while( string1[i]=='\0' && string2[i]=='\0' )
         {
             if(string1[i]<string2[i])
             {
-                return 0;
-            }
-            if(string1[i]>string2[i])
-            { 
                 return 1;
+            }
+            else if(string1[i]>string2[i])
+            { 
+                return -1;
             }
             else
             {
-                return 2;
+                return 0;
             }
         }
     }
- void ouput(char *string1, char *string2, int result)
+ void output(char *string1, char *string2, int result)
  {
-    if(result==0)
+    if(result>0)
     {
         printf("%s string is larger than %s\n" , string2 , string1);
     }
-    else if(result==1)
+    else if(result<1)
     {
         printf("%s string is larger than %s\n" , string1 , string2);
     }
     else 
     {
-        printf("both strings r equal");
+        printf("both strings are equal");
     }
  }
 
