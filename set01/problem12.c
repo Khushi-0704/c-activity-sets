@@ -1,3 +1,4 @@
+#include <stdio.h>
 struct _complex {
 	float real,imaginary;
 };
@@ -33,7 +34,7 @@ Complex input_complex()
     Complex c;
     printf("enter the real part:");
     scanf("%f" , &c.real);
-     printf("enter the imaginary part:");
+    printf("enter the imaginary part:");
     scanf("%f" , &c.imaginary);
     return c;
 }
@@ -78,7 +79,7 @@ Complex add(Complex a , Complex b )
         printf("number %d : %.3f + %.3fi\n" , i +1 , c[i].real , c[i].imaginary);
 
      }
-     printf("sum of the %d complex number : %f.3f + %3fi\n" , n , result.real , result.imaginary); 
+     printf("sum of the %d complex number : %3f + %3fi\n" , n , result.real , result.imaginary); 
  }
 
 
