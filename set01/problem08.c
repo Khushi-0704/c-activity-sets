@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int input_array_size(void);  // Updated function prototype
+int input_array_size(void);  
 void input_array(int n, int a[n]);
 int sum_n_array(int n, int a[n]);
 void output(int n, int a[n], int sum);
@@ -16,7 +16,7 @@ int main()
     return 0;
 }
 
-int input_array_size(void)  // Updated function definition
+int input_array_size(void)  
 {
     int n;
     printf("enter the size of array: \n");
