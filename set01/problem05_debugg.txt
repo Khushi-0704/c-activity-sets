@@ -1,0 +1,19 @@
+gdb .\problem05.exe                                                                            
+GNU gdb (GDB) 7.6.1                                                                                                             
+Copyright (C) 2013 Free Software Foundation, Inc.                                                                               
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\psc\c-activity-sets\set01\problem05.exe...done.
+(gdb) r 
+Starting program: C:\psc\c-activity-sets\set01/.\problem05.exe
+[New Thread 2764.0x4b5c]
+[New Thread 2764.0x4698]
+enter a number4 
+enter a number5
+enter a number6
+largest of 4, 5 and 6 is 6[Inferior 1 (process 2764) exited normally]
